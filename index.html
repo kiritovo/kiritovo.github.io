@@ -145,7 +145,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/01/JavaStudy1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/01/JavaStudy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -159,7 +159,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/04/01/JavaStudy1/" class="post-title-link" itemprop="url">JavaStudy1</a>
+            <a href="/2020/04/01/JavaStudy/" class="post-title-link" itemprop="url">JavaStudy</a>
         </h2>
 
         <div class="post-meta">
@@ -176,7 +176,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-02 12:40:31" itemprop="dateModified" datetime="2020-04-02T12:40:31+08:00">2020-04-02</time>
+                <time title="Modified: 2020-04-02 14:30:12" itemprop="dateModified" datetime="2020-04-02T14:30:12+08:00">2020-04-02</time>
               </span>
 
           
@@ -190,28 +190,28 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Java面试必备"><a href="#Java面试必备" class="headerlink" title="Java面试必备"></a>Java面试必备</h1><pre><code>xuet</code></pre><h2 id="1-面向对象"><a href="#1-面向对象" class="headerlink" title="1.面向对象"></a>1.面向对象</h2><p>​      面向对象的优点<strong>复用、维护、扩展</strong>起来比较方便, Java有这样的特点源于它的三个特性<strong>继承、封装、多态</strong>。</p>
+          <h1 id="Java面试必备"><a href="#Java面试必备" class="headerlink" title="Java面试必备"></a>Java面试必备</h1><pre><code>xuet</code></pre><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>​      面向对象的优点<strong>复用、维护、扩展</strong>起来比较方便, Java有这样的特点源于它的三个特性<strong>继承、封装、多态</strong>。</p>
 <ol>
 <li><strong>继承</strong>：当我们想继承就是一个类通过子类使用<strong>extends</strong>关键字，继承全部父类的属性、方法，不能选择性继承。子类可以拥有自己的属性、方法，同时子类可以对父类的方法进行<strong>重写</strong>。继承就是一种<strong>is a</strong> 的关系。java中所有的类都直接间接继承了<strong>object</strong>类（equals、toString、getClass等）</li>
 <li><strong>封装</strong>：把一个对象的属性私有化，然后给外界提供可以访问的接口。通过访问权限修饰符（<strong>private 、默认、protected、public</strong>）来控制访问权限，然后通过<strong>getter、setter、toString、构造函数</strong>等来实现与外界数据传输。可以更好的减少耦合、隐藏信息，实现细节，更加的安全。</li>
 <li><strong>多态</strong>：父类的引用指向子类的对象。<strong>重写、接口、抽象类抽象方法</strong>就是常用的多态。</li>
 </ol>
-<h2 id="2-平台无关性"><a href="#2-平台无关性" class="headerlink" title="2.平台无关性"></a>2.平台无关性</h2><p>​    我们平时写的.java文件，通过JDK中的<strong>javac</strong>的编译，编译成<strong>.class</strong>(JVM可以理解的字节码文件)，然后通过JVM，变成机器可以执行的机器码。所以字节码和不同系统的JVM实现了Java的平台无关性。</p>
-<h2 id="3-JDK-JRE的区别"><a href="#3-JDK-JRE的区别" class="headerlink" title="3.JDK JRE的区别"></a>3.JDK JRE的区别</h2><ol>
+<h2 id="平台无关性"><a href="#平台无关性" class="headerlink" title="平台无关性"></a>平台无关性</h2><p>​    我们平时写的.java文件，通过JDK中的<strong>javac</strong>的编译，编译成<strong>.class</strong>(JVM可以理解的字节码文件)，然后通过JVM，变成机器可以执行的机器码。所以字节码和不同系统的JVM实现了Java的平台无关性。</p>
+<h2 id="JDK-JRE的区别"><a href="#JDK-JRE的区别" class="headerlink" title="JDK JRE的区别"></a>JDK JRE的区别</h2><ol>
 <li>JDK包含JRE 同时还有编译器javac 等。</li>
 <li>JRE是java的运行环境。</li>
 </ol>
-<h2 id="4-Java和C-的区别"><a href="#4-Java和C-的区别" class="headerlink" title="4.Java和C++的区别"></a>4.Java和C++的区别</h2><ol>
+<h2 id="Java和C-的区别"><a href="#Java和C-的区别" class="headerlink" title="Java和C++的区别"></a>Java和C++的区别</h2><ol>
 <li>java有<strong>内存管理</strong>(GC)机制，不需要手动释放无用内存。</li>
 <li>C++有<strong>指针</strong>，java中没有，java中有引用。</li>
 <li>java都是单继承 ，C++可以多重继承。</li>
 <li>C++比java执行快，但是java可以跨平台。</li>
 </ol>
-<h2 id="5-重写和重载"><a href="#5-重写和重载" class="headerlink" title="5.重写和重载"></a>5.重写和重载</h2><ol>
+<h2 id="重写和重载"><a href="#重写和重载" class="headerlink" title="重写和重载"></a>重写和重载</h2><ol>
 <li><strong>重写</strong>就是子类对父类的方法重新编写，所有的东西相同，<strong>返回值、异常</strong>小于等于父类。<strong>访问权限修饰符</strong>大于等于父类。</li>
 <li><strong>重载</strong>就是方法名相同，参数类型、个数、顺序、方法返回值、访问权限修饰符可以不同。</li>
 </ol>
-<h2 id="6-String、StringBuffer、StringBuilder区别"><a href="#6-String、StringBuffer、StringBuilder区别" class="headerlink" title="6.String、StringBuffer、StringBuilder区别"></a>6.String、StringBuffer、StringBuilder区别</h2><ol>
+<h2 id="String、StringBuffer、StringBuilder区别"><a href="#String、StringBuffer、StringBuilder区别" class="headerlink" title="String、StringBuffer、StringBuilder区别"></a>String、StringBuffer、StringBuilder区别</h2><ol>
 <li><p>String 有final修饰所以是不可变的。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">char</span> value[];</span><br></pre></td></tr></table></figure>
 </li>
@@ -220,7 +220,7 @@
 <li><p>String有大小限制，单线程大量数据用StringBuilder。</p>
 </li>
 </ol>
-<h2 id="7-装箱和拆箱"><a href="#7-装箱和拆箱" class="headerlink" title="7.装箱和拆箱"></a>7.装箱和拆箱</h2><ol>
+<h2 id="装箱和拆箱"><a href="#装箱和拆箱" class="headerlink" title="装箱和拆箱"></a>装箱和拆箱</h2><ol>
 <li><p>装箱：基本数据类型(<strong>byte、boolean、char、float、int、short、doule、long</strong>)用对应引用数据类型包装起来。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer a = <span class="number">127</span>; </span><br><span class="line">Integer a = Integer.valueOf(<span class="number">127</span>);<span class="comment">//装箱操作等同于 调用了.valueOf方法</span></span><br></pre></td></tr></table></figure>
 
@@ -237,13 +237,13 @@
 
 </li>
 </ol>
-<h2 id="8-在一个静态方法中调用一个非静态成员非法"><a href="#8-在一个静态方法中调用一个非静态成员非法" class="headerlink" title="8.在一个静态方法中调用一个非静态成员非法"></a>8.在一个静态方法中调用一个非静态成员非法</h2><p>​      静态方法可以不通过对象调用，因此在静态方法里，也不能调用其他非静态变量，也不可以访问其他非静态成员。</p>
-<h2 id="9-接口-Interface-和抽象类-Abstract-Class-的区别"><a href="#9-接口-Interface-和抽象类-Abstract-Class-的区别" class="headerlink" title="9.接口(Interface)和抽象类(Abstract Class)的区别"></a>9.接口(Interface)和抽象类(Abstract Class)的区别</h2><ol>
+<h2 id="在一个静态方法中调用一个非静态成员非法"><a href="#在一个静态方法中调用一个非静态成员非法" class="headerlink" title="在一个静态方法中调用一个非静态成员非法"></a>在一个静态方法中调用一个非静态成员非法</h2><p>​      静态方法可以不通过对象调用，因此在静态方法里，也不能调用其他非静态变量，也不可以访问其他非静态成员。</p>
+<h2 id="接口-Interface-和抽象类-Abstract-Class-的区别"><a href="#接口-Interface-和抽象类-Abstract-Class-的区别" class="headerlink" title="接口(Interface)和抽象类(Abstract Class)的区别"></a>接口(Interface)和抽象类(Abstract Class)的区别</h2><ol>
 <li>抽象类可以有构造方法，接口中不能有构造方法且只有<strong>final、static</strong>修饰的变量。</li>
 <li>抽象类和接口<strong>不能</strong>被<strong>实例化</strong>。</li>
 <li>一个类只能实现一个抽象类，但是能实现多个接口。</li>
 </ol>
-<h2 id="10-成员变量和局部变量的区别"><a href="#10-成员变量和局部变量的区别" class="headerlink" title="10.成员变量和局部变量的区别"></a>10.成员变量和局部变量的区别</h2><ol>
+<h2 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h2><ol>
 <li>成员变量在<strong>类中</strong>方法外面而局部变量在代码块或者方法内。</li>
 <li>成员变量在<strong>堆</strong>中，局部变量在<strong>栈</strong>中。</li>
 <li>成员变量随<strong>对象创建存在</strong>，消失消失。局部变量在代码块或<strong>方法执行存在</strong>，执行完消失。</li>
