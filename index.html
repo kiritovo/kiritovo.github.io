@@ -168,10 +168,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-05-19 17:48:39 / Modified: 17:47:03" itemprop="dateCreated datePublished" datetime="2020-05-19T17:48:39+08:00">2020-05-19</time>
+              <time title="Created: 2020-05-19 17:25:15" itemprop="dateCreated datePublished" datetime="2020-05-19T17:25:15+08:00">2020-05-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-20 11:02:47" itemprop="dateModified" datetime="2020-05-20T11:02:47+08:00">2020-05-20</time>
+              </span>
 
           
 
@@ -204,6 +210,15 @@
 <p>base64Decode方法</p>
 <p>然后再调用</p>
 <p>aesDecryptByBytes方法就可以完成解密 接收最后的字符串就可以了</p>
+<h2 id="方案2：前台js转成Unicode-后台java在转回去"><a href="#方案2：前台js转成Unicode-后台java在转回去" class="headerlink" title="方案2：前台js转成Unicode 后台java在转回去"></a>方案2：前台js转成Unicode 后台java在转回去</h2><p>前台的直接调用这个方法 会返回 数字+，的组合</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">aesMinEncrypt</span>(<span class="params">str</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> val=<span class="string">""</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; str.length; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(val == <span class="string">""</span>)</span><br><span class="line">                val = str.charCodeAt(i).toString(<span class="number">16</span>);</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                val += <span class="string">","</span> + str.charCodeAt(i).toString(<span class="number">16</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> val;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>后台因为unicode吗少了前面的\u 和0  所以我们给他补零</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//补零的放法 </span></span><br><span class="line"><span class="function"><span class="keyword">public</span>  String <span class="title">addZeroForNum</span><span class="params">(String str, <span class="keyword">int</span> strLength)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> strLen = str.length();</span><br><span class="line">        StringBuffer sb = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">while</span> (strLen &lt; strLength) &#123;</span><br><span class="line">            sb = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">            sb.append(<span class="string">"0"</span>).append(str);<span class="comment">// 左补0</span></span><br><span class="line">            <span class="comment">// sb.append(str).append("0");//右补0</span></span><br><span class="line">            str = sb.toString();</span><br><span class="line">            strLen = str.length();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> str;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>解密的方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">String p[] =password.split(<span class="string">","</span>);</span><br><span class="line"></span><br><span class="line">String a =<span class="string">""</span>;</span><br><span class="line"><span class="keyword">for</span> ( <span class="keyword">int</span> i = <span class="number">0</span>; i &lt; p.length; i++ )</span><br><span class="line">&#123;</span><br><span class="line">    String code =addZeroForNum(p[i], <span class="number">4</span>);</span><br><span class="line">     a += (<span class="keyword">char</span>) Integer.parseInt (code.substring (<span class="number">0</span>, <span class="number">4</span>), <span class="number">16</span>);</span><br><span class="line">    <span class="keyword">if</span> (code.length () &gt; <span class="number">4</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        a += code.substring (<span class="number">4</span>, code.length ());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
