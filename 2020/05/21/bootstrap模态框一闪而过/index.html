@@ -28,7 +28,7 @@
 <meta property="og:description" content="主要原因是我们把模态框放到了form中 提交表单刷新了页面 所以形成了一闪而过的效果 主要的解决方案 给按钮的type&#x3D;“button” 改成这个 或者给form表单加一个onsubmit&#x3D;”return false”">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-21T02:36:38.192Z">
-<meta property="article:modified_time" content="2020-05-21T02:38:30.198Z">
+<meta property="article:modified_time" content="2020-05-25T02:13:28.201Z">
 <meta property="article:author" content="xuet">
 <meta name="twitter:card" content="summary">
 
@@ -172,12 +172,25 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-05-21 10:36:38 / Modified: 10:38:30" itemprop="dateCreated datePublished" datetime="2020-05-21T10:36:38+08:00">2020-05-21</time>
+              <time title="Created: 2020-05-21 10:36:38" itemprop="dateCreated datePublished" datetime="2020-05-21T10:36:38+08:00">2020-05-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-25 10:13:28" itemprop="dateModified" datetime="2020-05-25T10:13:28+08:00">2020-05-25</time>
+              </span>
 
           
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -188,7 +201,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>主要原因是我们把模态框放到了form中 提交表单刷新了页面</p>
+        <span id="busuanzi_container_page_pv">
+<span id="busuanzi_value_page_pv"></span></span>
+
+<p>主要原因是我们把模态框放到了form中 提交表单刷新了页面</p>
 <p>所以形成了一闪而过的效果</p>
 <p>主要的解决方案 给按钮的<strong>type=“button”</strong> 改成这个</p>
 <p>或者给form表单加一个<strong>onsubmit=”return false”</strong></p>
@@ -330,6 +346,26 @@
   </script>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -339,6 +375,7 @@
 
 
       </div>
+	  
     </footer>
   </div>
 

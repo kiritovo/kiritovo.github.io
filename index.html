@@ -168,10 +168,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-05-23 11:42:19 / Modified: 12:03:43" itemprop="dateCreated datePublished" datetime="2020-05-23T11:42:19+08:00">2020-05-23</time>
+              <time title="Created: 2020-05-23 11:42:19" itemprop="dateCreated datePublished" datetime="2020-05-23T11:42:19+08:00">2020-05-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-25 10:14:36" itemprop="dateModified" datetime="2020-05-25T10:14:36+08:00">2020-05-25</time>
+              </span>
 
           
 
@@ -184,7 +190,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;Integer,Integer&gt; mapa = <span class="keyword">new</span> HashMap&lt;Integer,Integer&gt;();</span><br><span class="line">   <span class="keyword">int</span> a = <span class="number">0</span>;</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">1001</span>; i++) &#123;</span><br><span class="line">       a+=i;</span><br><span class="line">       mapa.put(i, a);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">1001</span>; i++) &#123;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">2</span>; j &lt; <span class="number">1001</span> ; j++) &#123;</span><br><span class="line">           <span class="keyword">if</span>(mapa.get(j)-(i+<span class="number">1</span>) == <span class="number">2</span> * mapa.get(i))&#123;</span><br><span class="line">               System.out.println(<span class="string">"门牌："</span>+(i+<span class="number">1</span>)+<span class="string">"，最大门牌号为:"</span>+j);</span><br><span class="line">               <span class="keyword">continue</span>;</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="keyword">if</span>(mapa.get(j)-(i+<span class="number">1</span>) &gt; <span class="number">2</span> * mapa.get(i))&#123;</span><br><span class="line">               <span class="keyword">continue</span>;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+          <span id="busuanzi_container_page_pv">
+<span id="busuanzi_value_page_pv"></span>
+</span>
+
+<h2 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;Integer,Integer&gt; mapa = <span class="keyword">new</span> HashMap&lt;Integer,Integer&gt;();</span><br><span class="line">   <span class="keyword">int</span> a = <span class="number">0</span>;</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">1001</span>; i++) &#123;</span><br><span class="line">       a+=i;</span><br><span class="line">       mapa.put(i, a);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">1001</span>; i++) &#123;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">2</span>; j &lt; <span class="number">1001</span> ; j++) &#123;</span><br><span class="line">           <span class="keyword">if</span>(mapa.get(j)-(i+<span class="number">1</span>) == <span class="number">2</span> * mapa.get(i))&#123;</span><br><span class="line">               System.out.println(<span class="string">"门牌："</span>+(i+<span class="number">1</span>)+<span class="string">"，最大门牌号为:"</span>+j);</span><br><span class="line">               <span class="keyword">continue</span>;</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="keyword">if</span>(mapa.get(j)-(i+<span class="number">1</span>) &gt; <span class="number">2</span> * mapa.get(i))&#123;</span><br><span class="line">               <span class="keyword">continue</span>;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">                st_number,</span><br><span class="line">                st_name,</span><br><span class="line">        <span class="keyword">avg</span>(sc_score)</span><br><span class="line">        <span class="keyword">from</span></span><br><span class="line">        student <span class="keyword">as</span> s</span><br><span class="line">        <span class="keyword">LEFT</span> <span class="keyword">JOIN</span> score <span class="keyword">as</span> c  <span class="keyword">ON</span> s.st_number = c.st_number</span><br></pre></td></tr></table></figure>
 
@@ -268,7 +278,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-23 11:13:30" itemprop="dateModified" datetime="2020-05-23T11:13:30+08:00">2020-05-23</time>
+                <time title="Modified: 2020-05-25 10:14:43" itemprop="dateModified" datetime="2020-05-25T10:14:43+08:00">2020-05-25</time>
               </span>
 
           
@@ -282,7 +292,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="当xml需要返回的实体类中的属性有List-lt-Object-gt-如何实现"><a href="#当xml需要返回的实体类中的属性有List-lt-Object-gt-如何实现" class="headerlink" title="当xml需要返回的实体类中的属性有List&lt;Object&gt;如何实现"></a>当xml需要返回的实体类中的属性有List&lt;Object&gt;如何实现</h2><ol>
+          <span id="busuanzi_container_page_pv">
+<span id="busuanzi_value_page_pv"></span>
+</span>
+
+<h2 id="当xml需要返回的实体类中的属性有List-lt-Object-gt-如何实现"><a href="#当xml需要返回的实体类中的属性有List-lt-Object-gt-如何实现" class="headerlink" title="当xml需要返回的实体类中的属性有List&lt;Object&gt;如何实现"></a>当xml需要返回的实体类中的属性有List&lt;Object&gt;如何实现</h2><ol>
 <li><p>首先我的实体类1是这样的。我们主要处理的是实体类的中List</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MsgBoard</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String msgid;</span><br><span class="line">    <span class="keyword">private</span> String muserid;</span><br><span class="line">    <span class="keyword">private</span> String mcontent;</span><br><span class="line">    <span class="keyword">private</span> Date mpostime;</span><br><span class="line">    <span class="keyword">private</span> List&lt;ReplyMsg&gt; replyMsgList; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
@@ -343,10 +357,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-05-21 10:36:38 / Modified: 10:38:30" itemprop="dateCreated datePublished" datetime="2020-05-21T10:36:38+08:00">2020-05-21</time>
+              <time title="Created: 2020-05-21 10:36:38" itemprop="dateCreated datePublished" datetime="2020-05-21T10:36:38+08:00">2020-05-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-25 10:13:28" itemprop="dateModified" datetime="2020-05-25T10:13:28+08:00">2020-05-25</time>
+              </span>
 
           
 
@@ -359,7 +379,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>主要原因是我们把模态框放到了form中 提交表单刷新了页面</p>
+          <span id="busuanzi_container_page_pv">
+<span id="busuanzi_value_page_pv"></span></span>
+
+<p>主要原因是我们把模态框放到了form中 提交表单刷新了页面</p>
 <p>所以形成了一闪而过的效果</p>
 <p>主要的解决方案 给按钮的<strong>type=“button”</strong> 改成这个</p>
 <p>或者给form表单加一个<strong>onsubmit=”return false”</strong></p>
@@ -413,7 +436,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-22 16:34:28" itemprop="dateModified" datetime="2020-05-22T16:34:28+08:00">2020-05-22</time>
+                <time title="Modified: 2020-05-25 10:14:56" itemprop="dateModified" datetime="2020-05-25T10:14:56+08:00">2020-05-25</time>
               </span>
 
           
@@ -427,7 +450,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="方案1"><a href="#方案1" class="headerlink" title="方案1"></a>方案1</h2><p><strong>首先我们对前台进行处理</strong> 有两种解决方案一种是form提交的时候给密码进行加密</p>
+          <span id="busuanzi_container_page_pv">
+<span id="busuanzi_value_page_pv"></span>
+</span>
+
+<h2 id="方案1"><a href="#方案1" class="headerlink" title="方案1"></a>方案1</h2><p><strong>首先我们对前台进行处理</strong> 有两种解决方案一种是form提交的时候给密码进行加密</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>  <span class="attr">action</span>=<span class="string">"/index"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">name</span>=<span class="string">"fm"</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group"</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"username"</span>&gt;</span>用户名<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">placeholder</span>=<span class="string">"请输入您的用户名"</span> <span class="attr">required</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">       <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group"</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"password"</span>&gt;</span>密码<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">id</span>=<span class="string">"password"</span>  <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"请输入您的密码"</span> <span class="attr">required</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-block btn-primary"</span> <span class="attr">type</span>=<span class="string">"submit"</span>  <span class="attr">id</span>=<span class="string">"btn"</span>&gt;</span>立即登录        <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>加密的js写法，需要基础的jq包 注意这里的<strong>_key</strong>和<strong>_iv</strong>这个我们可以自己定义 前后台保持一致就可以</p>
@@ -497,10 +524,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-05-15 16:26:16 / Modified: 16:30:13" itemprop="dateCreated datePublished" datetime="2020-05-15T16:26:16+08:00">2020-05-15</time>
+              <time title="Created: 2020-05-15 16:26:16" itemprop="dateCreated datePublished" datetime="2020-05-15T16:26:16+08:00">2020-05-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-25 10:14:21" itemprop="dateModified" datetime="2020-05-25T10:14:21+08:00">2020-05-25</time>
+              </span>
 
           
 
@@ -513,7 +546,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="java项目http变为https"><a href="#java项目http变为https" class="headerlink" title="java项目http变为https"></a>java项目http变为https</h1><ol>
+          <span id="busuanzi_container_page_pv">
+<span id="busuanzi_value_page_pv"></span>
+</span>
+
+<h1 id="java项目http变为https"><a href="#java项目http变为https" class="headerlink" title="java项目http变为https"></a>java项目http变为https</h1><ol>
 <li><p>本次的项目是tomcat7，ssh项目的。我们需要修改的文件</p>
 <p>tomcat 的<strong>server.xml</strong>  和项目的<strong>web.xml</strong> </p>
 <p>首先要确定<strong>8443</strong>端口没有被占用</p>
@@ -584,10 +621,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-04-09 09:47:10 / Modified: 16:57:32" itemprop="dateCreated datePublished" datetime="2020-04-09T09:47:10+08:00">2020-04-09</time>
+              <time title="Created: 2020-04-09 09:47:10" itemprop="dateCreated datePublished" datetime="2020-04-09T09:47:10+08:00">2020-04-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-25 10:14:50" itemprop="dateModified" datetime="2020-05-25T10:14:50+08:00">2020-05-25</time>
+              </span>
 
           
 
@@ -600,7 +643,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h6 id="新接手一个项目，我们需要获取的材料和信息，务必做好记录，这会成为你以后交接给别人或者有新的开发人员加入的时候，最节省你时间的材料"><a href="#新接手一个项目，我们需要获取的材料和信息，务必做好记录，这会成为你以后交接给别人或者有新的开发人员加入的时候，最节省你时间的材料" class="headerlink" title="新接手一个项目，我们需要获取的材料和信息，务必做好记录，这会成为你以后交接给别人或者有新的开发人员加入的时候，最节省你时间的材料"></a>新接手一个项目，我们需要获取的材料和信息，务必做好记录，这会成为你以后交接给别人或者有新的开发人员加入的时候，最节省你时间的材料</h6><ol>
+          <span id="busuanzi_container_page_pv">
+<span id="busuanzi_value_page_pv"></span>
+</span>
+
+<h6 id="新接手一个项目，我们需要获取的材料和信息，务必做好记录，这会成为你以后交接给别人或者有新的开发人员加入的时候，最节省你时间的材料"><a href="#新接手一个项目，我们需要获取的材料和信息，务必做好记录，这会成为你以后交接给别人或者有新的开发人员加入的时候，最节省你时间的材料" class="headerlink" title="新接手一个项目，我们需要获取的材料和信息，务必做好记录，这会成为你以后交接给别人或者有新的开发人员加入的时候，最节省你时间的材料"></a>新接手一个项目，我们需要获取的材料和信息，务必做好记录，这会成为你以后交接给别人或者有新的开发人员加入的时候，最节省你时间的材料</h6><ol>
 <li>项目源码地址，拉代码当然是第一步啦 (版本管理软件是SVN/GIT服务器、Maven仓库地址信息)</li>
 <li>线上已部署的环境信息，服务器地址，例如WebLogic账号信息。 </li>
 <li>测试开发项目的 IP地址、端口、JDK版本、Tomcat版本等一系列的版本。</li>
@@ -656,10 +703,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-04-03 15:43:05 / Modified: 15:46:12" itemprop="dateCreated datePublished" datetime="2020-04-03T15:43:05+08:00">2020-04-03</time>
+              <time title="Created: 2020-04-03 15:43:05" itemprop="dateCreated datePublished" datetime="2020-04-03T15:43:05+08:00">2020-04-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-25 10:15:02" itemprop="dateModified" datetime="2020-05-25T10:15:02+08:00">2020-05-25</time>
+              </span>
 
           
 
@@ -672,7 +725,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="oracle数据库备份"><a href="#oracle数据库备份" class="headerlink" title="oracle数据库备份"></a>oracle数据库备份</h1><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off </span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> ================================================ </span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span>  Windows环境下Oracle数据库的自动备份脚本</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span>  <span class="number">1</span>. 使用当前日期命名备份文件。</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span>  <span class="number">2</span>. 自动删除<span class="number">7</span>天前的备份。</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> ================================================</span><br><span class="line"></span><br><span class="line">::以“YYYYMMDD”格式取出当前时间。</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> BACKUPDATE=<span class="variable">%date:~0,4%</span><span class="variable">%date:~5,2%</span><span class="variable">%date:~8,2%</span></span><br><span class="line"></span><br><span class="line">::设置用户名、密码和要备份的数据库。</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> USER=c##xuetao</span><br><span class="line"><span class="built_in">set</span> PASSWORD=xuetao</span><br><span class="line"><span class="built_in">set</span> DATABASE=orcl</span><br><span class="line">::创建备份目录。</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exist</span> "D:\backup\data" 		<span class="built_in">mkdir</span> D:\backup\data</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exist</span> "D:\backup\log" 		<span class="built_in">mkdir</span> D:\backup\log</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> DATADIR=D:\backup\data</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> LOGDIR=D:\backup\log</span><br><span class="line"></span><br><span class="line">exp <span class="variable">%USER%</span>/<span class="variable">%PASSWORD%</span>@<span class="variable">%DATABASE%</span>  file=<span class="variable">%DATADIR%</span>\data_<span class="variable">%BACKUPDATE%</span>.dmp log=<span class="variable">%LOGDIR%</span>\log_<span class="variable">%BACKUPDATE%</span>.log</span><br><span class="line">::删除<span class="number">7</span>天前的备份。</span><br><span class="line"></span><br><span class="line">forfiles /p "<span class="variable">%DATADIR%</span>" /s /m *.* /d -<span class="number">7</span> /c "<span class="built_in">cmd</span> /c <span class="built_in">del</span> @<span class="built_in">path</span>"</span><br><span class="line"></span><br><span class="line">forfiles /p "<span class="variable">%LOGDIR%</span>" /s /m *.* /d -<span class="number">7</span> /c "<span class="built_in">cmd</span> /c <span class="built_in">del</span> @<span class="built_in">path</span>"</span><br><span class="line"></span><br><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure>
+          <span id="busuanzi_container_page_pv">
+<span id="busuanzi_value_page_pv"></span>
+</span>
+
+<h1 id="oracle数据库备份"><a href="#oracle数据库备份" class="headerlink" title="oracle数据库备份"></a>oracle数据库备份</h1><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off </span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> ================================================ </span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span>  Windows环境下Oracle数据库的自动备份脚本</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span>  <span class="number">1</span>. 使用当前日期命名备份文件。</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span>  <span class="number">2</span>. 自动删除<span class="number">7</span>天前的备份。</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> ================================================</span><br><span class="line"></span><br><span class="line">::以“YYYYMMDD”格式取出当前时间。</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> BACKUPDATE=<span class="variable">%date:~0,4%</span><span class="variable">%date:~5,2%</span><span class="variable">%date:~8,2%</span></span><br><span class="line"></span><br><span class="line">::设置用户名、密码和要备份的数据库。</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> USER=c##xuetao</span><br><span class="line"><span class="built_in">set</span> PASSWORD=xuetao</span><br><span class="line"><span class="built_in">set</span> DATABASE=orcl</span><br><span class="line">::创建备份目录。</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exist</span> "D:\backup\data" 		<span class="built_in">mkdir</span> D:\backup\data</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exist</span> "D:\backup\log" 		<span class="built_in">mkdir</span> D:\backup\log</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> DATADIR=D:\backup\data</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> LOGDIR=D:\backup\log</span><br><span class="line"></span><br><span class="line">exp <span class="variable">%USER%</span>/<span class="variable">%PASSWORD%</span>@<span class="variable">%DATABASE%</span>  file=<span class="variable">%DATADIR%</span>\data_<span class="variable">%BACKUPDATE%</span>.dmp log=<span class="variable">%LOGDIR%</span>\log_<span class="variable">%BACKUPDATE%</span>.log</span><br><span class="line">::删除<span class="number">7</span>天前的备份。</span><br><span class="line"></span><br><span class="line">forfiles /p "<span class="variable">%DATADIR%</span>" /s /m *.* /d -<span class="number">7</span> /c "<span class="built_in">cmd</span> /c <span class="built_in">del</span> @<span class="built_in">path</span>"</span><br><span class="line"></span><br><span class="line">forfiles /p "<span class="variable">%LOGDIR%</span>" /s /m *.* /d -<span class="number">7</span> /c "<span class="built_in">cmd</span> /c <span class="built_in">del</span> @<span class="built_in">path</span>"</span><br><span class="line"></span><br><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure>
 
 <p>然后可以通过windows计划任务来实现每天的自动备份</p>
 
@@ -725,7 +782,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-21 17:12:04" itemprop="dateModified" datetime="2020-04-21T17:12:04+08:00">2020-04-21</time>
+                <time title="Modified: 2020-05-25 10:14:30" itemprop="dateModified" datetime="2020-05-25T10:14:30+08:00">2020-05-25</time>
               </span>
 
           
@@ -739,7 +796,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Java知识点Tip1"><a href="#Java知识点Tip1" class="headerlink" title="Java知识点Tip1"></a>Java知识点Tip1</h1><pre><code>xuet</code></pre><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>​      面向对象的优点<strong>复用、维护、扩展</strong>起来比较方便, Java有这样的特点源于它的三个特性<strong>继承、封装、多态</strong>。</p>
+          <span id="busuanzi_container_page_pv">
+<span id="busuanzi_value_page_pv"></span>
+</span>
+
+<h1 id="Java知识点Tip1"><a href="#Java知识点Tip1" class="headerlink" title="Java知识点Tip1"></a>Java知识点Tip1</h1><pre><code>xuet</code></pre><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>​      面向对象的优点<strong>复用、维护、扩展</strong>起来比较方便, Java有这样的特点源于它的三个特性<strong>继承、封装、多态</strong>。</p>
 <ol>
 <li><strong>继承</strong>：当我们想继承就是一个类通过子类使用<strong>extends</strong>关键字，继承全部父类的属性、方法，不能选择性继承。子类可以拥有自己的属性、方法，同时子类可以对父类的方法进行<strong>重写</strong>。继承就是一种<strong>is a</strong> 的关系。java中所有的类都直接间接继承了<strong>object</strong>类（equals、toString、getClass等）</li>
 <li><strong>封装</strong>：把一个对象的属性私有化，然后给外界提供可以访问的接口。通过访问权限修饰符（<strong>private 、default、protected、public</strong>）来控制访问权限，然后通过<strong>getter、setter、toString、构造函数</strong>等来实现与外界数据传输。可以更好的减少耦合、隐藏信息，实现细节，更加的安全。</li>
@@ -1092,6 +1153,26 @@
   </script>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -1101,6 +1182,7 @@
 
 
       </div>
+	  
     </footer>
   </div>
 
